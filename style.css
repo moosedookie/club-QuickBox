@@ -588,6 +588,11 @@ div#flabel_cont ul li {
   background-position: 4px -352px;
 }
 
+.label-count,.label-size {
+	color: #D4D6C9;
+	background-color: #273238;
+}
+
 div.tab {
   background: #fff none repeat scroll 0 0;
   font-family: inherit;
@@ -1242,7 +1247,7 @@ ul.CMenu li:hover ul {
 }
 
 /*********************
-   PLUGIN OVERRIDES 
+   PLUGIN OVERRIDES
 *********************/
 
 div#tskConsole {
