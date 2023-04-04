@@ -9,3 +9,6 @@ Next, simply clone the club-QuickBox skin to your themes
 ```
 https://github.com/moosedookie/club-QuickBox.git
 ```
+```
+chown -R www-data:www-data club-QuickBox
+```
