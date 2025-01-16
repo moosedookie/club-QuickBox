@@ -1056,7 +1056,7 @@ div#lcont div.std:nth-child(2n+1) {
 }
 
 #st_up {
-  background: url(./images/status.png) no-repeat 4px 2px;
+  background: url(./images/status.png) no-repeat 4px 3px;
 }
 
 #st_down {
