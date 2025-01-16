@@ -5,10 +5,6 @@ club-QuickBox is a fresh and modernized skin for rTorrent GUI, ruTorrent. This t
 
 You will need to navigate to your plugins/themes directory, typically located at ```../../rutorrent/plugins/theme/themes```
 
-Next, simply clone the club-QuickBox skin to your themes
+Next, simply clone the club-QuickBox skin to your themes then reboot rtorrent.
 ```
 https://github.com/moosedookie/club-QuickBox.git
-```
-```
-chown -R www-data:www-data club-QuickBox
-```
