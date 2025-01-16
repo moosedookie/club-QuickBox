@@ -1246,3 +1246,23 @@ div#tskConsole {
   width: 620px;
   height: auto;
 }
+
+/* Rules Manager */
+ul#rlsul > li input.TextboxNormal,
+ul#rlsul > li input.TextboxFocus {
+  background-color: #212121;
+}
+
+/* RSS URL Rewrite */
+.lf_rur {
+  background-color: #212121;
+  border: 1px solid #313131;
+  border-radius: 3px;
+  flex: 1 0 160px;
+  overflow-y: auto;
+}
+
+.lf_rur input.TextboxFocus,
+.lf_rur input.TextboxNormal {
+  background-color: #212121;
+}
