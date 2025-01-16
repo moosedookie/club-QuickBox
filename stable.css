@@ -185,9 +185,9 @@ div.stable-body table tbody tr.even:hover:nth-child(2n+1) td {
 }
 
 .stable-icon {
-    background-position: center center;
+    /* background-position: center center; */
     float: left;
-    height: 21px;
+    height: 17px;
     margin: 0 5px;
     padding: 0 !important;
     width: 18px;

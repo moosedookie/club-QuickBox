@@ -23,13 +23,13 @@
 #meter-band-text {
   color: #fff;
   text-shadow: 0px 0px 2px #000;
-  position: relative;
+  position: absolute;
   text-align: left;
   float: left;
   width: 0px;
   height: 0px;
   overflow: visible;
-  left: 40%;
+  left: 50%;
   font-size: 11px;
   font-family: inherit;
   z-index: 1;
@@ -42,14 +42,15 @@
   border-right: medium none;
   height: 18px;
   line-height: 16px;
-  margin-left: 0;
-  padding-left: 25px;
+  margin-left: 0px;
+  padding-left: 0px;
   width: 100px;
+  border-radius: 12px;
 }
 
 #meter-cpu-text {
   position: absolute;
-  left: 45px;
+  left: 0px;
   top: 0px;
   color: #fff;
   text-shadow: 0px 0px 2px #000;
@@ -1442,4 +1443,24 @@ hr {
 
 .autodl-bg-15 {
   background-color: #d3d3d3
+}
+
+/* Rules Manager */
+ul#rlsul > li input.TextboxNormal,
+ul#rlsul > li input.TextboxFocus {
+  background-color: #212121;
+}
+
+/* RSS URL Rewrite */
+.lf_rur {
+  background-color: #212121;
+  border: 1px solid #313131;
+  border-radius: 3px;
+  flex: 1 0 160px;
+  overflow-y: auto;
+}
+
+.lf_rur input.TextboxFocus,
+.lf_rur input.TextboxNormal {
+  background-color: #212121;
 }

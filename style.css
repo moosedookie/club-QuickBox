@@ -29,10 +29,10 @@ div#preload {
   background-image: url(./images/toolbar.png);
   background-image: url(./images/status_icons.png);
   background-image: url(./images/r_bg.gif);
-  background-image: url("./images/asc.gif");
+  background-image: url(./images/asc.gif);
   background-image: url(./images/desc.gif);
-  background-image: url(./images/pnl_open.png) !important;
-  background-image: url(./images/pnl_close.png) !important;
+  background-image: url(./images/pnl_open.gif);
+  background-image: url(./images/pnl_close.gif);
   background-image: url(./images/headers.png);
   background-repeat: no-repeat;
 }
@@ -247,6 +247,10 @@ div#t div.TB_Separator {
   margin: 0 0 0 5px;
 }
 
+#t .nav-link:hover {
+  background: none;
+}
+
 div#t div#add {
   background: transparent url(./images/toolbar.png) no-repeat 0px 0px
 }
@@ -372,8 +376,7 @@ div#t a#mnu_go::before {
 }
 
 div#t a#mnu_go {
-  margin: 6px 12px 0 6px;
-  padding: 3px;
+  margin: -1px 0px 0px 3px;
   background: #65878F;
   padding: 4px;
   line-height: 12px;
@@ -388,20 +391,12 @@ div#t a#mnu_go:hover {
 
 #go {
   background: transparent !important;
-  *margin: 3px 0 0 0;
-  *padding: 3px;
-  *background: #222 !important;
-  *border-radius: 2px;
   height: 12px !important;
-  *color: #fff;
-  width: 2px !important;
-  *border: 1px solid #333;
+  width: 0px !important;
 }
 
 #go:hover {
   background: transparent !important;
-  *background: #111 !important;
-  *border-color: #222;
 }
 
 .stg_con td input {
@@ -456,16 +451,15 @@ button,
 input.Button0,
 input[type="button"],
 input.Button {
-  background: #222 none repeat scroll 0 0;
+  background: #222 none repeat scroll 0 0 !important;
   border: 1px solid #333;
-  border-radius: 3px;
-  color: #6C7A89;
+  border-radius: 7px;
+  color: #ccc;
   cursor: pointer;
-  /*display: inline;*/
   font-weight: 400;
   height: 21px;
   line-height: 2px;
-  margin-left: 12px;
+  margin: 7px;
   padding: 6px 12px;
   text-shadow: none;
 }
@@ -482,34 +476,39 @@ input[type="button"]:hover input[type="button"]:focus input[type="button"]:activ
   color: #999;
 }
 
+#offcanvas-sidepanel {
+  border: 0px;
+  background-color: transparent !important;
+}
+
 #CatList,
 category-list {
   background-color: #222;
-  border: 1px solid #222;
+  border: none;
 }
 
 category-panel {
   font-size: 12px;
   font-family: Open Sans;
-  --open-background-image: url(../plugins/theme/themes/club-QuickBox/images/pnl_open.gif);
-  --close-background-image: url(../plugins/theme/themes/club-QuickBox/images/pnl_close.gif);
+  --open-background-image: url(../plugins/theme/themes/club-QuickBox/images/pnl_open.png);
+  --close-background-image: url(../plugins/theme/themes/club-QuickBox/images/pnl_close.png);
+  --heading-border-color: rgba(0, 0, 0, .729);
 }
 
 category-panel::part(heading) {
   background-color: #273238;
-  border-top: 1px solid #2a2a2a;
   color: #ccc;
   font-size: 14px;
   font-weight: bold;
   height: 25px;
   line-height: 25px;
-  padding: 2px 28px;
+  padding: 2px 3px;
 }
 
 panel-label {
   color: #FFF;
   border: none;
-  padding: 4px 9px;
+  padding: 4px;
   line-height: 16px;
   border: 1px solid #1A2329;
   background-color: #1A2329;
@@ -519,7 +518,7 @@ panel-label {
   --badge-background-color: #2a2a2a;
   --icon-offset: 0px -534px;
   --status-image: url(../plugins/theme/themes/club-QuickBox/images/status_icons.png);
-  --icon-size: 18px;
+  --icon-size: 17px;
 }
 
 panel-label:hover {
@@ -533,27 +532,27 @@ panel-label[selected] {
 }
 
 panel-label[icon=all] {
-  --icon-offset: 0px -305px;
+  --icon-offset: 0px -175px;
 }
 
 panel-label[icon=down] {
-  --icon-offset: 0px 0px;
+  --icon-offset: 0px 1px;
 }
 
 panel-label[icon=completed] {
-  --icon-offset: 0px -30px;
+  --icon-offset: 0px -111px;
 }
 
 panel-label[icon=up-down] {
-  --icon-offset: 0px -278px;
+  --icon-offset: 0px -159px;
 }
 
-panel-label[icon=incompleted] {
-  --icon-offset: 0px -57px;
+panel-label[icon=inactive] {
+  --icon-offset: 0px -192px;
 }
 
 panel-label[icon=error] {
-  --icon-offset: 0px -169px;
+  --icon-offset: 0px -96px;
 }
 
 panel-label[icon=no-label] {
@@ -563,7 +562,7 @@ panel-label[icon=no-label] {
 panel-label[icon=rss],
 panel-label[icon=rss-dis],
 panel-label[icon=rss-group] {
-  --icon-offset: 0px -360px;
+  --icon-offset: 0px -208px;
 }
 
 .stable-icon {
@@ -590,6 +589,10 @@ div.tab {
 div#lcont {
   background: #222 none repeat scroll 0 0;
   font-family: inherit;
+}
+
+div#gcont div.row.Header {
+  background: #222;
 }
 
 div#gcont table td.Header {
@@ -646,7 +649,11 @@ div#List {
   border-color: #222;
   border-style: solid;
   border-width: 1px;
-  margin-right: 6px;
+}
+
+#list-table {
+  border: none;
+  background-color: transparent;
 }
 
 div#FileList,
@@ -692,8 +699,6 @@ div#stg {
 
 .stg_con {
   background-color: #2a2a2a;
-  height: 500px;
-  overflow: hidden;
 }
 
 #st_btns {
@@ -772,7 +777,7 @@ ul#tabbar {
   border-style: solid solid none;
   border-width: 1px 1px medium;
   color: #038ba9;
-  height: 24px;
+  height: 44px;
   text-shadow: 0 1px 0 #000;
 }
 
@@ -817,7 +822,7 @@ ul#tabbar li.selected a {
   border-style: solid solid none;
   border-width: 1px 1px medium;
   color: #038ba9;
-  height: 21px;
+  height: 44px;
   padding: 4px;
   text-shadow: none;
 }
@@ -886,6 +891,10 @@ div#tcreate div.dlg-header {
 div.dlg-header {
   background-color: #222;
   border-bottom: 1px solid #333
+}
+
+.cont {
+  padding: 0px;
 }
 
 div#yesnoDlg div.dlg-header {
@@ -1047,11 +1056,19 @@ div#lcont div.std:nth-child(2n+1) {
 }
 
 #st_up {
-  background: url(./images/status.png) no-repeat 6px 0px;
+  background: url(./images/status.png) no-repeat 4px 2px;
 }
 
 #st_down {
-  background: url(./images/status.png) no-repeat 6px -18px;
+  background: url(./images/status.png) no-repeat 4px -18px;
+}
+
+#st_up .icon {
+  background: none;
+}
+
+#st_down .icon {
+  background: none;
 }
 
 .statuscell {
@@ -1076,12 +1093,12 @@ div#lcont div.std:nth-child(2n+1) {
 
 .Icon_Dir {
   background-image: url(./images/status_icons.png);
-  background-position: 0px -479px !important;
+  background-position: 0px -272px !important;
 }
 
 .Icon_File {
   background-image: url(./images/status_icons.png);
-  background-position: 0px -452px !important;
+  background-position: 0px -256px !important;
 }
 
 span#ds,
@@ -1119,8 +1136,15 @@ div#VDivider:hover {
 div#t div {
   cursor: pointer;
   float: left;
-  height: 30px;
-  width: 30px;
+}
+
+div.navbar-nav div.nav-icon {
+  width: 28px;
+  height: 28px;
+}
+
+#t .dropdown-item {
+  padding: 1rem 1rem;
 }
 
 .noty_bar.noty_theme_default.noty_error {
@@ -1178,38 +1202,6 @@ div#t div {
 
 #PluginList {
   margin-top: 0;
-}
-
-.Status_Up {
-  background-position: 0px -28px !important;
-}
-
-.Status_Down {
-  background-position: 0px 1px !important;
-}
-
-.Status_Checking {
-  background-position: 0 -302px !important;
-}
-
-.Status_Error {
-  background-position: 0 -167px !important;
-}
-
-.Status_Paused {
-  background-position: 0 -86px !important;
-}
-
-.Status_Completed {
-  background-position: 0 -193px !important;
-}
-
-.Status_Error_Up {
-  background-position: 0 -141px !important;
-}
-
-.Status_Error_Down {
-  background-position: 0 -115px !important;
 }
 
 table#maincont {
