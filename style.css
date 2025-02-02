@@ -2,8 +2,8 @@
 
 html,
 body {
-  background-color: #2a2a2a;
-  color: #ccc;
+  background-color: var(--settings-background-color);
+  color: var(--menu-color);
   font-family: Open Sans;
   text-shadow: none;
 }
@@ -66,7 +66,7 @@ hr {
   -moz-border-left-colors: none;
   -moz-border-right-colors: none;
   -moz-border-top-colors: none;
-  border-color: #333 -moz-use-text-color -moz-use-text-color !important;
+  border-color: var(--menu-border-color) -moz-use-text-color -moz-use-text-color !important;
   border-image: none;
   border-style: solid none none;
   border-width: 1px 0 0;
@@ -81,9 +81,9 @@ div#cover {
 }
 
 div#msg {
-  background: #2a2a2a none repeat scroll 0 0;
-  border-bottom: 1px solid #333;
-  border-top: 1px solid #333;
+  background: var(--settings-background-color) none repeat scroll 0 0;
+  border-bottom: 1px solid var(--menu-border-color);
+  border-top: 1px solid var(--menu-border-color);
   color: #aaa;
   font-size: 12px;
   font-weight: bold;
@@ -91,25 +91,25 @@ div#msg {
 }
 
 div#sc {
-  border: 1px solid #333333;
+  border: 1px solid var(--menu-border-color);
   background-color: #181818
 }
 
 div#sc li.se_act div {
-  background-color: #333333;
+  background-color: var(--menu-disabled-color);
   color: #888888
 }
 
 div#lng {
   background-color: #181818;
-  border: 1px solid #333333
+  border: 1px solid var(--menu-border-color)
 }
 
 /*Drop Menu */
 
 ul.CMenu {
-  background: #222 none repeat scroll 0 0;
-  border-color: #333;
+  background: var(--menu-background-color) none repeat scroll 0 0;
+  border-color: var(--menu-border-color);
   border-style: solid;
   border-width: 1px;
   opacity: 0.98;
@@ -123,7 +123,7 @@ ul.CMenu li {
 }
 
 ul.CMenu li:hover {
-  background: #333
+  background: var(--menu-background-color)
 }
 
 ul.CMenu li.menuitem:first-child {
@@ -147,21 +147,21 @@ ul.CMenu li a {
 }
 
 ul.CMenu li a:hover {
-  color: #757571;
-  background: #cfdeef url(./images/menus.png) no-repeat 0px 0px;
+  color: var(--menu-highlight-color);
+  background: var(--menu-highlight-background-color) url(./images/menus.png) no-repeat 0px 0px;
 }
 
 ul.CMenu li a.dis {
-  color: #333333
+  color: var(--menu-disabled-color)
 }
 
 ul.CMenu li a.dis:hover {
-  color: #333333
+  color: var(--menu-disabled-color)
 }
 
 ul.CMenu li hr {
-  background-color: #222;
-  border-bottom: 1px solid #222;
+  background-color: var(--menu-background-color);
+  border-bottom: 1px solid var(--menu-border-color);
   border-width: 0 0 1px;
   height: 1px;
   margin: 0;
@@ -187,8 +187,8 @@ ul.CMenu li ul li a.sel {
 }
 
 ul.CMenu li a:hover {
-  background-color: #222;
-  color: #ccc;
+  background-color: var(--menu-background-color);
+  color: var(--menu-color);
   font-family: Open Sans;
   font-weight: 600;
   text-shadow: 0 0 2px #000;
@@ -200,18 +200,18 @@ ul.CMenu li:hover ul li a {
 }
 
 ul.CMenu li:hover ul li a:hover {
-  background-color: #222;
-  color: #ccc;
+  background-color: var(--menu-background-color);
+  color: var(--menu-color);
   text-shadow: 0 0 2px #000;
 }
 
 ul.CMenu li ul li a.dis {
-  color: #333333
+  color: var(--menu-disabled-color)
 }
 
 ul.CMenu li ul li a.dis:hover {
   background-color: #eee;
-  color: #333333
+  color: var(--menu-disabled-color)
 }
 
 div#VDivider {
@@ -228,8 +228,8 @@ div#VDivider {
 }
 
 div#t {
-  background: #2a2a2a none repeat scroll 0 0;
-  border-bottom: 1px solid #222;
+  background: var(--settings-background-color) none repeat scroll 0 0;
+  border-bottom: 1px solid var(--menu-border-color);
   height: 42px;
   line-height: 0px;
   white-space: nowrap;
@@ -241,7 +241,7 @@ div#t a:hover {
 }
 
 div#t div.TB_Separator {
-  background-color: #222;
+  background-color: var(--menu-background-color);
   border-right: 1px solid #444;
   height: 42px;
   margin: 0 0 0 5px;
@@ -422,7 +422,7 @@ textarea {
 
 textarea[disabled] {
   border: 1px solid #000;
-  background: #2a2a2a;
+  background: var(--settings-background-color);
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
 }
@@ -451,10 +451,10 @@ button,
 input.Button0,
 input[type="button"],
 input.Button {
-  background: #222 none repeat scroll 0 0 !important;
-  border: 1px solid #333;
+  background: var(--menu-background-color) none repeat scroll 0 0 !important;
+  border: 1px solid var(--menu-border-color);
   border-radius: 7px;
-  color: #ccc;
+  color: var(--menu-color);
   cursor: pointer;
   font-weight: 400;
   height: 21px;
@@ -483,7 +483,7 @@ input[type="button"]:hover input[type="button"]:focus input[type="button"]:activ
 
 #CatList,
 category-list {
-  background-color: #222;
+  background-color: var(--menu-background-color);
   border: none;
 }
 
@@ -497,7 +497,7 @@ category-panel {
 
 category-panel::part(heading) {
   background-color: #273238;
-  color: #ccc;
+  color: var(--menu-color);
   font-size: 14px;
   font-weight: bold;
   height: 25px;
@@ -515,7 +515,7 @@ panel-label {
   --prefix-color: #FFF;
   --prefix-fontsize: 20px;
   --badge-color: #A0A0A0;
-  --badge-background-color: #2a2a2a;
+  --badge-background-color: var(--settings-background-color);
   --icon-offset: 0px -534px;
   --status-image: url(../plugins/theme/themes/club-QuickBox/images/status_icons.png);
   --icon-size: 17px;
@@ -587,16 +587,16 @@ div.tab {
 }
 
 div#lcont {
-  background: #222 none repeat scroll 0 0;
+  background: var(--menu-background-color) none repeat scroll 0 0;
   font-family: inherit;
 }
 
 div#gcont div.row.Header {
-  background: #222;
+  background: var(--menu-background-color);
 }
 
 div#gcont table td.Header {
-  background: #222 none repeat scroll 0 0;
+  background: var(--menu-background-color) none repeat scroll 0 0;
   color: #aaa;
   font-family: inherit;
   font-size: 14px;
@@ -610,7 +610,7 @@ div#gcont table tr {
 }
 
 div#gcont table tr td {
-  background: #2a2a2a none repeat scroll 0 0;
+  background: var(--settings-background-color) none repeat scroll 0 0;
 }
 
 div#gcont table {
@@ -619,14 +619,14 @@ div#gcont table {
 
 div.graph_tab {
   color: #aaa;
-  border-color: #2a2a2a;
-  background-color: #222;
+  border-color: var(--settings-background-color);
+  background-color: var(--menu-background-color);
   top: -2px;
 }
 
 .graph_tab_legend {
   color: #aaa;
-  background-color: #222;
+  background-color: var(--menu-background-color);
 }
 
 .graph_tab_tooltip {
@@ -636,17 +636,17 @@ div.graph_tab {
 }
 
 div.table_tab {
-  background-color: #222;
+  background-color: var(--menu-background-color);
   font-family: inherit;
 }
 
 div#modalbg {
-  background-color: #222;
+  background-color: var(--menu-background-color);
 }
 
 div#List {
-  background-color: #222;
-  border-color: #222;
+  background-color: var(--menu-background-color);
+  border-color: var(--menu-border-color);
   border-style: solid;
   border-width: 1px;
 }
@@ -660,13 +660,12 @@ div#FileList,
 div#TrackerList,
 div#PeerList,
 div#Speed {
-  background-color: #222;
+  background-color: var(--menu-background-color);
 }
 
 div#stg {
-  background-color: #2a2a2a;
+  background-color: var(--settings-background-color);
   box-shadow: 10px 10px 5px #111;
-  height: 560px;
 }
 
 .lm li {
@@ -693,16 +692,16 @@ div#stg {
 }
 
 .lm li a.focus {
-  background-color: #333;
+  background-color: var(--menu-background-color);
   color: #cacaca;
 }
 
 .stg_con {
-  background-color: #2a2a2a;
+  background-color: var(--settings-background-color);
 }
 
 #st_btns {
-  background: #2a2a2a none repeat scroll 0 0;
+  background: var(--settings-background-color) none repeat scroll 0 0;
   float: right;
   height: 20px;
   padding: 3px;
@@ -712,7 +711,7 @@ div#stg {
 }
 
 *>fieldset {
-  border: 1px solid #333
+  border: 1px solid var(--menu-border-color)
 }
 
 input.disabled {
@@ -734,11 +733,11 @@ legend {
 }
 
 select.cols {
-  border: 1px solid #333333
+  border: 1px solid var(--menu-border-color)
 }
 
 div#dragmask {
-  border: 1px dotted #333333
+  border: 1px dotted var(--menu-border-color)
 }
 
 div#tdetails {
@@ -753,8 +752,8 @@ div#tdetails {
 }
 
 div#tdcont {
-  background: #222 none repeat scroll 0 0;
-  border-color: #222;
+  background: var(--menu-background-color) none repeat scroll 0 0;
+  border-color: var(--menu-border-color);
   border-style: solid;
   border-width: 1px;
   margin-top: -10px;
@@ -772,8 +771,8 @@ table#maincont td.uicell {
 /*TABBED MENU */
 
 ul#tabbar {
-  background: #222 none repeat scroll 0 0;
-  border-color: #2a2a2a;
+  background: var(--menu-background-color) none repeat scroll 0 0;
+  border-color: var(--settings-background-color);
   border-style: solid solid none;
   border-width: 1px 1px medium;
   color: #038ba9;
@@ -782,8 +781,8 @@ ul#tabbar {
 }
 
 ul#tabbar li a {
-  background: #2a2a2a none repeat scroll 0 0;
-  border-color: #222;
+  background: var(--settings-background-color) none repeat scroll 0 0;
+  border-color: var(--menu-border-color);
   color: #bbb;
   cursor: pointer;
   font-family: inherit;
@@ -795,16 +794,16 @@ ul#tabbar li a {
 }
 
 ul#tabbar li a:hover {
-  border-color: #222;
+  border-color: var(--menu-border-color);
   border-width: 1px;
   color: #fff;
-  text-shadow: 0 0 2px #ccc;
-  background: #333;
+  text-shadow: 0 0 2px var(--menu-color);
+  background: var(--menu-background-color);
 }
 
 ul#tabbar li.selected a {
   background: #181818 none repeat scroll 0 0;
-  border: 1px solid #222;
+  border: 1px solid var(--menu-border-color);
   color: #eee;
   padding: 4px 6px 5px;
   text-shadow: 0 0 4px #eee;
@@ -817,8 +816,8 @@ ul#tabbar li.selected a {
 }
 
 .tabbar {
-  background: #222 none repeat scroll 0 0;
-  border-color: #2a2a2a;
+  background: var(--menu-background-color) none repeat scroll 0 0;
+  border-color: var(--settings-background-color);
   border-style: solid solid none;
   border-width: 1px 1px medium;
   color: #038ba9;
@@ -828,8 +827,8 @@ ul#tabbar li.selected a {
 }
 
 .tabbar li a {
-  background: #333 none repeat scroll 0 0;
-  border-color: #333;
+  background: var(--menu-background-color) none repeat scroll 0 0;
+  border-color: var(--menu-border-color);
   border-radius: 4px;
   color: #aaa;
   cursor: pointer;
@@ -854,8 +853,8 @@ ul#tabbar li.selected a {
   -moz-border-left-colors: none;
   -moz-border-right-colors: none;
   -moz-border-top-colors: none;
-  background: #333 none repeat scroll 0 0;
-  border-color: #333;
+  background: var(--menu-background-color) none repeat scroll 0 0;
+  border-color: var(--menu-border-color);
   border-image: none;
   border-radius: 4px;
   border-style: solid solid none;
@@ -870,14 +869,19 @@ ul#tabbar li.selected a {
 
 /* DIALOGS */
 
+dialog {
+  background-color: var(--settings-background-color) !important;
+  border-color: var(--menu-border-color) !important;
+}
+
 div#dlgProps textarea#prop-trackers {
   background: #222222;
-  border: 1px solid #333333
+  border: 1px solid var(--menu-border-color)
 }
 
 div.dlg-window {
-  background-color: #2a2a2a;
-  border-color: #333;
+  background-color: var(--settings-background-color);
+  border-color: var(--menu-border-color);
   border-radius: 3px;
   border-style: solid;
   border-width: 1px;
@@ -889,8 +893,8 @@ div#tcreate div.dlg-header {
 }
 
 div.dlg-header {
-  background-color: #222;
-  border-bottom: 1px solid #333
+  background-color: var(--menu-background-color);
+  border-bottom: 1px solid var(--menu-border-color)
 }
 
 .cont {
@@ -898,14 +902,14 @@ div.dlg-header {
 }
 
 div#yesnoDlg div.dlg-header {
-  background: #222 none repeat scroll 0 0;
-  border-bottom: 1px solid #333333;
+  background: var(--menu-background-color) none repeat scroll 0 0;
+  border-bottom: 1px solid var(--menu-border-color);
   text-shadow: 0 -1px 0 #000;
 }
 
 div#stg-header {
-  background: #222 none repeat scroll 0 0;
-  border-bottom: 1px solid #333;
+  background: var(--menu-background-color) none repeat scroll 0 0;
+  border-bottom: 1px solid var(--menu-border-color);
   font-family: Open Sans;
   font-size: 14px;
   text-shadow: none;
@@ -913,7 +917,7 @@ div#stg-header {
 
 div#stg .lm {
   background-color: #1a1a1a;
-  border: 1px solid #333;
+  border: 1px solid var(--menu-border-color);
   height: 511px;
 }
 
@@ -950,21 +954,20 @@ div#dlgAbout {
 }
 
 div#tadd {
-  background-color: #2a2a2a;
+  background-color: var(--settings-background-color);
   box-shadow: 10px 10px 5px #111;
-  height: 300px;
   margin: 5px;
   width: 400px;
 }
 
 div#tadd-header {
-  background: #222 none repeat scroll 0 0;
-  border-bottom: 1px solid #333333;
+  background: var(--menu-background-color) none repeat scroll 0 0;
+  border-bottom: 1px solid var(--menu-border-color);
   text-shadow: none;
 }
 
 div.tab {
-  background-color: #2a2a2a;
+  background-color: var(--settings-background-color);
 }
 
 div#t div#ind {
@@ -1021,19 +1024,19 @@ input#add_button {
 div#lcont {}
 
 div#lcont div.std {
-  background: #2a2a2a none repeat scroll 0 0;
+  background: var(--settings-background-color) none repeat scroll 0 0;
   height: 17px;
   line-height: 17px;
-  border-bottom: 1px solid #2a2a2a;
+  border-bottom: 1px solid var(--settings-background-color);
 }
 
 div#lcont div.std:nth-child(2n+1) {
-  background: #222 none repeat scroll 0 0;
+  background: var(--menu-background-color) none repeat scroll 0 0;
 }
 
 #StatusBar {
-  background: #2a2a2a none repeat scroll 0 0;
-  border-top: 1px solid #2a2a2a;
+  background: var(--settings-background-color) none repeat scroll 0 0;
+  border-top: 1px solid var(--settings-background-color);
   color: #ddd;
   font-family: inherit;
   height: 30px;
@@ -1042,7 +1045,7 @@ div#lcont div.std:nth-child(2n+1) {
 }
 
 #StatusBar table tr td {
-  background: #2a2a2a none repeat scroll 0 0;
+  background: var(--settings-background-color) none repeat scroll 0 0;
   border: medium none;
   padding-right: 5px;
 }
