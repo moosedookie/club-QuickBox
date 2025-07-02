@@ -157,6 +157,10 @@ ul.CMenu li a {
   padding: 3px 4px 3px 18px;
 }
 
+ul.CMenu li a::before, .CMenu li a::after {
+    width: 0rem;
+}
+
 ul.CMenu li a:hover {
   color: var(--menu-highlight-color);
   background: var(--menu-highlight-background-color) url(./images/menus.png)
