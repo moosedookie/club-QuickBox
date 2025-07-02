@@ -705,6 +705,10 @@ div#stg {
   background-color: var(--settings-background-color);
 }
 
+.stg_con legend {
+    background-color: transparent;
+}
+
 #st_btns {
   background: var(--settings-background-color) none repeat scroll 0 0;
   float: right;
@@ -1092,7 +1096,7 @@ div#lcont div.std:nth-child(2n + 1) {
   font-family: inherit;
   height: 30px;
   margin-bottom: -5px;
-  margin-top: 8px;
+  margin-top: -2px;
 }
 
 #StatusBar table tr td {

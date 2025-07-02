@@ -12,6 +12,13 @@
   --text-shadow-color: #000;
   --meter-bg-color: #1e824c;
   --selected-text-shadow: 0 0 4px var(--text-shadow-color);
+  --row-odd-bg-color: var(--border-color-dark);
+  --row-even-bg-color: var(--border-color-light);
+  --row-active-bg-color: var(--highlight-color);
+  --row-border-color: var(--border-color-dark) var(--border-color-light) var(--border-color-light) var(--border-color-dark);
+  --header-bg-color: var(--background-dark) none repeat scroll 0 0;
+  --header-border-color: var(--border-color-dark) var(--border-color-light) var(--border-color-light) var(--border-color-dark);
+  --header-bg-image: none;
 }
 
 /* Stable Table Styling */
@@ -68,6 +75,11 @@ div#tdcont .stable {
   background: transparent url(./images/s.gif) no-repeat scroll left center;
 }
 
+.stable thead td:not(:last-child) div {
+    border-right: 1px solid var(--border-color-dark);
+    line-height: 17px;
+}
+
 /* Table Body Styling */
 .stable-body {
   background: window;
@@ -110,6 +122,16 @@ div#tdcont .stable {
   background: var(--background-light) none repeat scroll 0 0;
   color: var(--highlight-color);
   text-shadow: var(--selected-text-shadow);
+}
+
+.stable tbody tr.selected td {
+  background: var(--background-light) none repeat scroll 0 0;
+  color: var(--highlight-color);
+  text-shadow: var(--selected-text-shadow);
+}
+
+.stable tbody td div {
+    margin: 0px;
 }
 
 /* Table Body Rows with nth-child */
@@ -202,7 +224,7 @@ div.stable-body table tbody tr.even:hover:nth-child(2n + 1) td {
   font-weight: 400;
   height: 0;
   left: 40%;
-  line-height: 23px;
+  line-height: inherit;
   overflow: visible;
   position: relative;
   text-align: left;
