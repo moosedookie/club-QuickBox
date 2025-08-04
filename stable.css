@@ -15,6 +15,7 @@
   --rborder-color: var(--border-color-dark) var(--border-color-light)
     var(--border-color-light) var(--border-color-dark);
   --highlight-background: #212529;
+  --header-dark-color: linear-gradient(0deg, #2a2a2a 0%, #222 100%);
 }
 
 /* Stable Table Styling */
@@ -78,7 +79,7 @@ div#tdcont .stable {
 
 .stable thead {
   background-color: var(--background-dark) none repeat scroll 0 0;
-  background-image: none;
+  background-image: var(--header-dark-color);
 }
 
 .stable thead td div {

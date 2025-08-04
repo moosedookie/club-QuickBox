@@ -157,8 +157,9 @@ ul.CMenu li a {
   padding: 3px 4px 3px 18px;
 }
 
-ul.CMenu li a::before, .CMenu li a::after {
-    width: 0rem;
+ul.CMenu li a::before,
+.CMenu li a::after {
+  width: 0rem;
 }
 
 ul.CMenu li a:hover {
@@ -285,8 +286,15 @@ div#t div.TB_Separator {
 }
 
 /* Navigation Links */
+#t .nav-link {
+  border: transparent;
+  background: transparent;
+  color: var(--menu-color);
+}
+
 #t .nav-link:hover {
   background: none;
+  color: var(--menu-highlight-color);
 }
 
 /* Toolbar */
@@ -710,7 +718,7 @@ div#stg {
 }
 
 .stg_con legend {
-    background-color: transparent;
+  background-color: transparent;
 }
 
 #st_btns {
